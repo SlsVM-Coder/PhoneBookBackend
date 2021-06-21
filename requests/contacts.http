@@ -1,0 +1,33 @@
+@api = http://localhost:4000/contact
+
+
+### Select all Contacts
+GET {{api}}
+
+### Create a new Contact
+POST {{api}}
+Content-Type: application/json
+
+{
+   "FirstName": "Prueba3",
+   "LastName": "preba3",
+   "Phone": "8112323289",
+   "userId":1
+}
+
+### Get Contact by Contact.Id
+GET {{api}}/10
+
+### Deleting Contact by Contact.Id
+DELETE {{api}}/9
+
+### Update Contact by Contact.Id
+PUT {{api}}/10
+Content-Type: application/json
+
+{
+   "FirstName": "Diana",
+   "LastName": "Alvarez",
+   "Phone": "8112323290",
+   "userId":1
+}

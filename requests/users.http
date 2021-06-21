@@ -1,0 +1,16 @@
+@api = http://localhost:4000/user
+
+### Select All Users
+GET {{api}}
+
+### Select User by Id
+GET {{api}}/1
+
+### Create new User
+POST {{api}}
+Content-Type: application/json
+
+{
+   "userName": "admin2",
+   "password": "admin2"
+}
